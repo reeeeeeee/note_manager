@@ -1,0 +1,44 @@
+<nav class="navbar navbar-light bg-light justify-content-between" *ngIf="loginservice.submitted">
+  <div class="container-fluid" style="background-color: #b8b8c8;padding: 10px;">
+    <a class="navbar-brand">Note Management System</a>
+    <form class="form-inline">
+      <button class="btn btn-outline-success my-2 my-sm-0" type="submit" (click)="Signout()">Signout</button>
+    </form>
+  </div>
+</nav>
+
+<!-- <nav class="navbar navbar-expand-lg bg-light" *ngIf="loginservice.submitted">
+  <div class="container-fluid" style="background-color: #b8b8c8;padding: 10px;">
+    <a class="navbar-brand" href="#">Note Management System</a>
+    <button class="navbar-toggler" type="button"  data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item dropdown" *ngFor="let menu of menuitem">
+          <a class="nav-link" *ngIf="!menu.ISDROPDOWNMENU" routerLink="{{menu.ROUTE}}" routerLinkActive="active" [routerLinkActiveOptions]="{exact:true}">{{menu.NAME}}</a>
+          <div *ngIf="menu.ISDROPDOWNMENU">
+            <a class="nav-link dropdown-toggle" href="#" id="dropdownmenu" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              {{menu.NAME}}
+            </a>
+            <div class="dropdown-menu" aria-labelledby="dropdownmenu">
+              <div *ngFor="let submenu of submenuitem">
+                <div *ngIf="menu.MENUID==submenu.MENUID">
+                  <a class="dropdown-item" routerLink="{{submenu.SUBROUTE}}">{{submenu.SUBNAME}}</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>  -->
+  <router-outlet></router-outlet>
+  <div class="container-fluid">
+    <footer *ngIf="loginservice.submitted">
+      <p>Author: Md Naimul hasan shohan<br>
+      <a href="mailto:asianshohan@gmail.com">asianshohan@gmail.com</a></p>
+    </footer>
+  </div>
+

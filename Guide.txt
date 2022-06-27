@@ -1,0 +1,13 @@
+https://developmobileapplications.com/angular-11-pagination-example-angular-11-tutorial   //paging link
+install for paging :npm i ngx-pagination
+==============================================================================================
+https://edupala.com/how-to-implement-an-angular-search-filter-in-angular/        //searching link
+npm i ng2-search-filter --save
+===============================================================================================
+https://www.youtube.com/watch?v=h_Fevp18GJU    //toaster youtube link
+npm install ngx-toaster --save
+npm install @angular/animations --save
+add "node_modules/ngx-toastr/toastr.css" to angular.json
+constructor(private toastr:ToastrService) { }
+this.toastr.success('Data delete successfully','Messege')
+===============================================================================================

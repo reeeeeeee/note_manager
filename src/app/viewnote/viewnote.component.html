@@ -1,0 +1,127 @@
+<form [formGroup]="viewnoteform" >
+    <div class="container">
+        <div class="row">
+                <div class="col-sm-7">
+                    <div class="row">
+                        <div class="col-sm-6">
+                            <button class="btn btn-default" routerLink="/note"><i class="fa fa-plus"></i> Add New Note</button>
+                        </div>
+                        <!-- <div class="col-sm-8">
+                            <label>Note Type</label>
+                                <select class="form-control" formControlName="NoteTypeID" (change)="onChange($event)">
+                                    <option *ngFor="let x of notetypelist" value={{x.NoteTypeID}}>
+                                        {{x.NoteTypeName}}
+                                    </option>
+                                </select>
+                        </div> -->
+                        <!-- <div class="col-sm-4">
+                            <label>Duration</label>
+                                <select class="form-control" formControlName="Range" (change)="onChange($event)">
+                                    <option *ngFor="let x of rangeist" value={{x.ID}}>
+                                        {{x.range}}
+                                    </option>
+                                </select>
+                        </div> -->
+                        <div class="col-sm-6">
+                            <input type="text" class="search form-control" [(ngModel)]="term" [ngModelOptions]="{standalone: true}" placeholder="Search">
+                        </div>
+                    </div><br>
+                
+                    <div class="row">
+                        <table class="table" [cellPadding]="0" [cellPadding]="0">
+                            <tr>
+                                <th>Note Type</th>
+                                <th>Note</th>
+                                <th>Date Time</th>
+                                <th>Status</th>
+                                <th>Action</th>
+                            </tr>
+                            <tr *ngFor="let x of notelist | filter: term | paginate: { itemsPerPage: 8, currentPage: cp }">
+                                <td>
+                                    <span *ngIf="x.NoteTypeID=='1'">Regular</span>
+                                    <span *ngIf="x.NoteTypeID=='2'">Reminder</span>
+                                    <span *ngIf="x.NoteTypeID=='3'">Todo</span>
+                                    <span *ngIf="x.NoteTypeID=='4'">Bookmark</span>
+                                </td>
+                                <td>{{x.NoteText}}</td>
+                                <td>{{x.Datetime}}</td>
+                                <td>
+                                    <span *ngIf="x.InoperationID==''">N/A</span>
+                                    <span *ngIf="x.NoteTypeID=='3' && x.InoperationID==null">In-complete</span>
+                                    <span *ngIf="x.NoteTypeID=='3' && x.InoperationID=='true'">Complete</span>
+                                </td>
+                                <td>
+                                    <button class="btn btn-default btn-sm" (click)="onEdit(x.NoteText)"><i class="fa fa-edit"></i> Edit</button>&nbsp;
+                                    <button class="btn btn-default btn-sm" style="background-color: #B22222;" (click)="onDelete(x.NoteText)"><i class="fa fa-remove"></i> Delete</button>
+                                </td>
+                            </tr>
+                        </table>
+                        <pagination-controls (pageChange)="cp = $event" class="my-pagination">
+                
+                        </pagination-controls>
+                    </div>
+                </div>
+                <div class="col-sm-1"></div>
+                <div class="col-sm-4">
+                    <p style="text-align:center">Today List</p>
+                    <div class="row">
+                        <table class="table" [cellPadding]="0" [cellPadding]="0">
+                            <tr>
+                                <th>Note Type</th>
+                                <th>Note</th>
+                            </tr>
+                            <tr *ngFor="let x of todaylist">
+                                <td>
+                                    <span *ngIf="x.NoteTypeID=='1'">Regular</span>
+                                    <span *ngIf="x.NoteTypeID=='2'">Reminder</span>
+                                    <span *ngIf="x.NoteTypeID=='3'">Todo</span>
+                                    <span *ngIf="x.NoteTypeID=='4'">Bookmark</span>
+                                </td>
+                                <td>{{x.NoteText}}</td>
+                            </tr>
+                        </table>
+                    </div>
+
+                    <div class="row">
+                        <p style="text-align:center">Weekly List</p>
+                        <table class="table" [cellPadding]="0" [cellPadding]="0">
+                            <tr>
+                                <th>Note Type</th>
+                                <th>Note</th>
+                            </tr>
+                            <tr *ngFor="let x of weeklist">
+                                <td>
+                                    <span *ngIf="x.NoteTypeID=='1'">Regular</span>
+                                    <span *ngIf="x.NoteTypeID=='2'">Reminder</span>
+                                    <span *ngIf="x.NoteTypeID=='3'">Todo</span>
+                                    <span *ngIf="x.NoteTypeID=='4'">Bookmark</span>
+                                </td>
+                                <td>{{x.NoteText}}</td>
+                            </tr>
+                        </table>
+                    </div>
+                    <div class="row">
+                        <p style="text-align:center">Monthly List</p>
+                        <table class="table" [cellPadding]="0" [cellPadding]="0">
+                            <tr>
+                                <th>Note Type</th>
+                                <th>Note</th>
+                            </tr>
+                            <tr *ngFor="let x of todaylist">
+                                <td>
+                                    <span *ngIf="x.NoteTypeID=='1'">Regular</span>
+                                    <span *ngIf="x.NoteTypeID=='2'">Reminder</span>
+                                    <span *ngIf="x.NoteTypeID=='3'">Todo</span>
+                                    <span *ngIf="x.NoteTypeID=='4'">Bookmark</span>
+                                </td>
+                                <td>{{x.NoteText}}</td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+        </div>
+       
+    </div>
+    </form>
+    
+    

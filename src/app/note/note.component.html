@@ -1,0 +1,65 @@
+<form [formGroup]="noteform" (ngSubmit)="onSubmit()">
+    <div class="container">
+    <div class="row">
+        <div class="col-sm-1">
+        </div>
+        <div class="col-sm-10 card">
+            <p class="header" style="font-family: 'Times New Roman', Times, serif;">Node Entry Form</p>
+           
+            <div class="row">
+                <div class="col-sm-12">
+                    <label>Note Type</label>
+                    <select class="form-control" formControlName="NoteTypeID" [ngClass]="{ 'is-invalid': submitted && f['NoteTypeID'].value==0}" (change)="onChange($event)">
+                        <option *ngFor="let x of notlist" value={{x.NoteTypeID}}>
+                            {{x.NoteTypeName}}
+                        </option>
+                    </select>
+                    <div *ngIf="submitted && f['NoteTypeID'].value==0" class="invalid-feedback">
+                        <div>Select Department.</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-sm-6">
+                    <label>Enter Note Text</label>
+                    <textarea type="textarea" class="form-control" formControlName="NoteText" [ngClass]="{ 'is-invalid': submitted && f['NoteText'].errors }"></textarea>
+                    <!-- <input type="textarea" class="form-control" formControlName="NoteText" [ngClass]="{ 'is-invalid': submitted && f['NoteText'].errors }"> -->
+                    <div *ngIf="submitted && f['NoteText'].errors" class="invalid-feedback">
+                        <div *ngIf="f['NoteText'].errors['required']">Note is required</div>
+                        <div *ngIf="f['NoteText'].errors['maxlength']">Max length is 100</div>
+                    </div>
+                </div>
+                <div class="col-sm-6" *ngIf="edited">
+                    <label>Due Date</label>
+                    <input type="text" formControlName="DateTime"
+                    placeholder="Datepicker"
+                    class="form-control"
+                    bsDatepicker [ngClass]="{'is-invalid': submitted && f['DateTime'].errors}">
+                    <div *ngIf="submitted && f['DateTime'].errors" class="invalid-feedback">
+                        <div *ngIf="f['DateTime'].errors['required']">Due Date is required</div>
+                    </div><br>
+                </div>
+            </div>
+            <div class="row" *ngIf="complete">
+                <label><input type="checkbox" name="InoperationID" formControlName="InoperationID"> Complete.</label>
+            </div>
+
+        </div>
+        
+    </div>
+    </div>
+    <br>
+    <div class="row">
+        <div class="col-sm-6">
+    
+        </div>
+        <div class="col-sm-6">
+            <input type="submit" value="Submit" class="btn btn-primary">&nbsp;
+            <input type="button" value="View Note" (click)="onView()" class="btn btn-primary">
+        </div> 
+    </div><br>
+    </form>
+    
+    
+    

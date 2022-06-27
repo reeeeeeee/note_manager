@@ -1,0 +1,30 @@
+/* You can add global styles to this file, and also import other style files */
+
+@import "../node_modules/bootstrap/dist/css/bootstrap.css";
+@import "../node_modules/ngx-toastr/toastr.css"
+
+/* @import "../src/assets/css/bootstrap5.min.css"; menu link css bootstrap  */
+
+/* @import url("../src/assets/css/bootstrap5.min.css"); */
+
+/* @import "../src/assets/css/bootstrap.min.css";
+@import "../src/assets/css/font-awesome.min.css";
+@import "../src/assets/css/owl.carousel.css";
+@import  "../src/assets/css/owl.theme.css";
+@import  "../src/assets/css/owl.transitions.css";
+
+@import "../src/assets/css/animate.css";
+
+@import "../src/assets/css/normalize.css";
+
+@import "../src/assets/css/meanmenu.min.css";
+
+@import "../src/assets/css/main.css";
+@import "../src/assets/css/educate-custon-icon.css";
+@import "../src/assets/css/morris.css";
+@import "../src/assets/css/jquery.mCustomScrollbar.min.css";
+@import "../src/assets/css/metisMenu.min.css";
+@import "../src/assets/css/metisMenu-vertical.css";
+@import "../src/assets/css/style.css";
+@import "../src/assets/css/responsive.css"; 
+ */

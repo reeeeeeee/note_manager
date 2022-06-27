@@ -1,0 +1,20 @@
+{
+  "NoteType": [
+    {
+      "NoteTypeID": 1,
+      "NoteTypeName": "Regular"
+    },
+    {
+      "NoteTypeID": 2,
+      "NoteTypeName": "Reminder"
+    },
+    {
+      "NoteTypeID": 3,
+      "NoteTypeName": "Todo"
+    },
+    {
+      "NoteTypeID": 4,
+      "NoteTypeName": "Bookmark"
+    }
+  ]
+}
