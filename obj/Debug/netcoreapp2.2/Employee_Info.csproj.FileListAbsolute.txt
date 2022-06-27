@@ -1,0 +1,28 @@
+C:\Users\atlas\Documents\Visual Studio 2017\Projects\Employee_Info\Employee_Info\bin\Debug\netcoreapp2.2\Employee_Info.deps.json
+C:\Users\atlas\Documents\Visual Studio 2017\Projects\Employee_Info\Employee_Info\bin\Debug\netcoreapp2.2\Employee_Info.runtimeconfig.json
+C:\Users\atlas\Documents\Visual Studio 2017\Projects\Employee_Info\Employee_Info\bin\Debug\netcoreapp2.2\Employee_Info.runtimeconfig.dev.json
+C:\Users\atlas\Documents\Visual Studio 2017\Projects\Employee_Info\Employee_Info\bin\Debug\netcoreapp2.2\Employee_Info.dll
+C:\Users\atlas\Documents\Visual Studio 2017\Projects\Employee_Info\Employee_Info\obj\Debug\netcoreapp2.2\Employee_Info.csprojAssemblyReference.cache
+C:\Users\atlas\Documents\Visual Studio 2017\Projects\Employee_Info\Employee_Info\obj\Debug\netcoreapp2.2\Employee_Info.csproj.CoreCompileInputs.cache
+C:\Users\atlas\Documents\Visual Studio 2017\Projects\Employee_Info\Employee_Info\obj\Debug\netcoreapp2.2\Employee_Info.RazorAssemblyInfo.cache
+C:\Users\atlas\Documents\Visual Studio 2017\Projects\Employee_Info\Employee_Info\obj\Debug\netcoreapp2.2\Employee_Info.RazorAssemblyInfo.cs
+C:\Users\atlas\Documents\Visual Studio 2017\Projects\Employee_Info\Employee_Info\obj\Debug\netcoreapp2.2\Employee_Info.AssemblyInfoInputs.cache
+C:\Users\atlas\Documents\Visual Studio 2017\Projects\Employee_Info\Employee_Info\obj\Debug\netcoreapp2.2\Employee_Info.AssemblyInfo.cs
+C:\Users\atlas\Documents\Visual Studio 2017\Projects\Employee_Info\Employee_Info\obj\Debug\netcoreapp2.2\Employee_Info.RazorTargetAssemblyInfo.cache
+C:\Users\atlas\Documents\Visual Studio 2017\Projects\Employee_Info\Employee_Info\bin\Debug\netcoreapp2.2\Employee_Info.pdb
+C:\Users\atlas\Documents\Visual Studio 2017\Projects\Employee_Info\Employee_Info\obj\Debug\netcoreapp2.2\Employee_Info.dll
+C:\Users\atlas\Documents\Visual Studio 2017\Projects\Employee_Info\Employee_Info\obj\Debug\netcoreapp2.2\Employee_Info.pdb
+C:\Users\atlas\Desktop\InSightin\Employee_Info\Employee_Info\bin\Debug\netcoreapp2.2\Employee_Info.deps.json
+C:\Users\atlas\Desktop\InSightin\Employee_Info\Employee_Info\bin\Debug\netcoreapp2.2\Employee_Info.runtimeconfig.json
+C:\Users\atlas\Desktop\InSightin\Employee_Info\Employee_Info\bin\Debug\netcoreapp2.2\Employee_Info.runtimeconfig.dev.json
+C:\Users\atlas\Desktop\InSightin\Employee_Info\Employee_Info\bin\Debug\netcoreapp2.2\Employee_Info.dll
+C:\Users\atlas\Desktop\InSightin\Employee_Info\Employee_Info\bin\Debug\netcoreapp2.2\Employee_Info.pdb
+C:\Users\atlas\Desktop\InSightin\Employee_Info\Employee_Info\obj\Debug\netcoreapp2.2\Employee_Info.csprojAssemblyReference.cache
+C:\Users\atlas\Desktop\InSightin\Employee_Info\Employee_Info\obj\Debug\netcoreapp2.2\Employee_Info.csproj.CoreCompileInputs.cache
+C:\Users\atlas\Desktop\InSightin\Employee_Info\Employee_Info\obj\Debug\netcoreapp2.2\Employee_Info.RazorAssemblyInfo.cache
+C:\Users\atlas\Desktop\InSightin\Employee_Info\Employee_Info\obj\Debug\netcoreapp2.2\Employee_Info.RazorAssemblyInfo.cs
+C:\Users\atlas\Desktop\InSightin\Employee_Info\Employee_Info\obj\Debug\netcoreapp2.2\Employee_Info.AssemblyInfoInputs.cache
+C:\Users\atlas\Desktop\InSightin\Employee_Info\Employee_Info\obj\Debug\netcoreapp2.2\Employee_Info.AssemblyInfo.cs
+C:\Users\atlas\Desktop\InSightin\Employee_Info\Employee_Info\obj\Debug\netcoreapp2.2\Employee_Info.RazorTargetAssemblyInfo.cache
+C:\Users\atlas\Desktop\InSightin\Employee_Info\Employee_Info\obj\Debug\netcoreapp2.2\Employee_Info.dll
+C:\Users\atlas\Desktop\InSightin\Employee_Info\Employee_Info\obj\Debug\netcoreapp2.2\Employee_Info.pdb
